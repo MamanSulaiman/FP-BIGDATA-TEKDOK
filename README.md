@@ -28,7 +28,7 @@ Sistem ini menggabungkan data terstruktur (CSV) dan tidak terstruktur (gambar JP
 | Aspek      | Penjelasan                                                                 |
 |------------|-----------------------------------------------------------------------------|
 | *Volume* | Data sebesar 1.5 GB (gambar penyakit kulit 1.4 GB, data skincare 213 KB).  |
-| *Velocity* | Pemrosesan batch menggunakan PySpark dan model deep learning.            |
+| *Velocity* | Pemrosesan batch menggunakan python dan lenet model deep learning.            |
 | *Variety* | Data terstruktur (CSV) dan tidak terstruktur (JPEG, PNG).                 |
 | *Veracity* | Keakuratan klasifikasi penting untuk validitas rekomendasi skincare.     |
 | *Value*   | Memberikan nilai nyata berupa saran skincare berbasis kondisi kulit.      |
