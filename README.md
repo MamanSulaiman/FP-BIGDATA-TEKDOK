@@ -46,8 +46,29 @@ Sistem ini menggabungkan data terstruktur (CSV) dan tidak terstruktur (gambar JP
 ---
 
 ## 🏗 Arsitektur Proyek
-<pre> ```plaintext FP-BIGDATA-TEKDOK/ ├── skin-disease-api/ │ ├── DATASET_SKIN/ # Dataset gambar penyakit kulit (JPEG/PNG) │ ├── app/ # Komponen inti aplikasi Flask │ │ ├── _pycache_/ # Cache Python otomatis │ │ ├── static/ # Aset statis untuk frontend │ │ │ ├── css/ │ │ │ │ └── style.css # Styling halaman HTML │ │ │ └── js/ │ │ │ └── script.js # Interaktivitas frontend │ │ ├── templates/ # Template HTML │ │ │ ├── index.html # Halaman utama (upload gambar) │ │ │ ├── result.html # Hasil prediksi & rekomendasi │ │ │ └── error.html # Halaman error │ │ ├── uploads/ # Gambar yang diunggah user │ │ ├── main.py # Routing & logika utama Flask │ │ └── skincare_multilabel.csv # Dataset structured untuk rekomendasi skincare │ ├── requirements.txt # Dependencies Python │ └── README.nd # Dokumentasi internal proyek ├── uploads/ # Folder upload global (opsional) └── README.md # Dokumentasi utama proyek ``` </pre>
----
+```plaintext
+FP-BIGDATA-TEKDOK/
+├── skin-disease-api/
+│   ├── DATASET_SKIN/                         # Dataset gambar penyakit kulit (JPEG/PNG)
+│   ├── app/                                  # Komponen inti aplikasi Flask
+│   │   ├── _pycache_/                        # Cache Python otomatis
+│   │   ├── static/                           # Aset statis untuk frontend
+│   │   │   ├── css/
+│   │   │   │   └── style.css                 # Styling halaman HTML
+│   │   │   └── js/
+│   │   │       └── script.js                 # Interaktivitas frontend
+│   │   ├── templates/                        # Template HTML
+│   │   │   ├── index.html                    # Halaman utama (upload gambar)
+│   │   │   ├── result.html                   # Hasil prediksi & rekomendasi
+│   │   │   └── error.html                    # Halaman error
+│   │   ├── uploads/                          # Gambar yang diunggah user
+│   │   ├── main.py                           # Routing & logika utama Flask
+│   │   └── skincare_multilabel.csv           # Dataset structured untuk rekomendasi skincare
+│   ├── requirements.txt                      # Dependencies Python
+│   └── README.nd                             # Dokumentasi internal proyek
+├── uploads/                                  # Folder upload global (opsional)
+└── README.md                                 # Dokumentasi utama proyek
+
 
 ## ⚙ Teknologi yang Digunakan
 
