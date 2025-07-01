@@ -9,7 +9,7 @@ Skin Disease
 "https://www.kaggle.com/datasets/pacificrm/skind"
 
 DEMO 📷
-"https://www.youtube.com/watch?v=vQV-2IFsTL8"
+"https://www.youtube.com/watch?v=32inSjRqEjw"
 
 ---
 
