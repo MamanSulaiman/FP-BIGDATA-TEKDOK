@@ -46,7 +46,7 @@ Sistem ini menggabungkan data terstruktur (CSV) dan tidak terstruktur (gambar JP
 | Kategori            | Teknologi                  |
 |---------------------|----------------------------|
 | Bahasa Pemrograman  | Python                     |
-| Big Data Processing | Apache Spark (PySpark)     |
+| Big Data Processing | Machine Learning (Lenet model)     |
 | Image Processing    | PIL, NumPy                 |
 | Machine Learning    | TensorFlow, Keras          |
 | Data Analysis       | Pandas                     |
@@ -54,11 +54,4 @@ Sistem ini menggabungkan data terstruktur (CSV) dan tidak terstruktur (gambar JP
 
 ---
 
-## 💻 Cara Instalasi & Menjalankan Proyek
 
-1. *Clone Repository*
-   ```bash
-   git clone https://github.com/username/SkinVisionAI.git
-   cd SkinVisionAI
-
-🖼 Screenshot
