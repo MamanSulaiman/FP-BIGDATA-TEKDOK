@@ -1,0 +1,55 @@
+# 🧠 SkinVisionAI
+### Smart Skin Disease Classification & Skincare Recommendation System
+
+---
+
+## 📌 Deskripsi Singkat
+
+*SkinVisionAI* adalah sistem cerdas berbasis deep learning dan big data yang dirancang untuk:
+- Mengidentifikasi penyakit kulit dari gambar (foto wajah/kulit).
+- Memberikan rekomendasi produk skincare berdasarkan jenis penyakit dan kandungan bahan aktif produk.
+
+Sistem ini menggabungkan data terstruktur (CSV) dan tidak terstruktur (gambar JPEG/PNG), serta memanfaatkan teknologi pemrosesan gambar, machine learning, dan analisis ingredients untuk hasil yang personal dan tepat guna.
+
+---
+
+## ✨ Fitur Utama
+
+- 🔍 Klasifikasi penyakit kulit secara otomatis dari gambar.
+- 🧴 Rekomendasi skincare berdasarkan diagnosis dan kandungan produk.
+- 📂 Mendukung input gambar dari pengguna (tidak terbatas pada dataset).
+- 🧠 Menggunakan CNN (TensorFlow/Keras) untuk prediksi berbasis citra.
+- 📊 Memetakan jenis penyakit ke skincare yang sesuai.
+
+---
+
+## 🧠 Analisis 5V Big Data
+
+| Aspek      | Penjelasan                                                                 |
+|------------|-----------------------------------------------------------------------------|
+| *Volume* | Data sebesar 1.5 GB (gambar penyakit kulit 1.4 GB, data skincare 213 KB).  |
+| *Velocity* | Pemrosesan batch menggunakan PySpark dan model deep learning.            |
+| *Variety* | Data terstruktur (CSV) dan tidak terstruktur (JPEG, PNG).                 |
+| *Veracity* | Keakuratan klasifikasi penting untuk validitas rekomendasi skincare.     |
+| *Value*   | Memberikan nilai nyata berupa saran skincare berbasis kondisi kulit.      |
+
+---
+
+## 🏗 Arsitektur Proyek
+(nnti disesuikan)
+
+
+---
+
+## ⚙ Teknologi yang Digunakan
+
+| Kategori            | Teknologi                  |
+|---------------------|----------------------------|
+| Bahasa Pemrograman  | Python                     |
+| Big Data Processing | Machine Learning (Lenet model)     |
+| Image Processing    | PIL, NumPy                 |
+| Machine Learning    | TensorFlow, Keras          |
+| Data Analysis       | Pandas                     |
+| Visualisasi Opsional| Matplotlib, Seaborn        |
+
+---
