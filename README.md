@@ -44,7 +44,18 @@ Sistem ini menggabungkan data terstruktur (CSV) dan tidak terstruktur (gambar JP
 | *Value*   | Memberikan nilai nyata berupa saran skincare berbasis kondisi kulit.      |
 
 ---
+## ⚙ Teknologi yang Digunakan
 
+| Kategori            | Teknologi                  |
+|---------------------|----------------------------|
+| Bahasa Pemrograman  | Python                     |
+| Big Data Processing | Machine Learning (Lenet model)     |
+| Image Processing    | PIL, NumPy                 |
+| Machine Learning    | TensorFlow, Keras          |
+| Data Analysis       | Pandas                     |
+| Visualisasi Opsional| Matplotlib, Seaborn        |
+
+---
 ## 🏗 Arsitektur Proyek
 ```plaintext
 FP-BIGDATA-TEKDOK/
@@ -70,15 +81,4 @@ FP-BIGDATA-TEKDOK/
 └── README.md                                 # Dokumentasi utama proyek
 
 
-## ⚙ Teknologi yang Digunakan
 
-| Kategori            | Teknologi                  |
-|---------------------|----------------------------|
-| Bahasa Pemrograman  | Python                     |
-| Big Data Processing | Machine Learning (Lenet model)     |
-| Image Processing    | PIL, NumPy                 |
-| Machine Learning    | TensorFlow, Keras          |
-| Data Analysis       | Pandas                     |
-| Visualisasi Opsional| Matplotlib, Seaborn        |
-
----
