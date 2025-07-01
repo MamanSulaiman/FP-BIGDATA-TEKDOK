@@ -1,6 +1,13 @@
 # 🧠 SkinVisionAI
 ### Smart Skin Disease Classification & Skincare Recommendation System
 
+Dataset 📁
+Skincare
+"https://www.kaggle.com/datasets/najwaalsaadi/skin-care" 
+
+Skin Disease
+"https://www.kaggle.com/datasets/pacificrm/skind"
+
 DEMO 📷
 "https://www.youtube.com/watch?v=vQV-2IFsTL8"
 
@@ -39,8 +46,27 @@ Sistem ini menggabungkan data terstruktur (CSV) dan tidak terstruktur (gambar JP
 ---
 
 ## 🏗 Arsitektur Proyek
-(nnti disesuikan)
-
+FP-BIGDATA-TEKDOK/
+├── skin-disease-api/                         
+│   ├── DATASET_SKIN/                         # Dataset gambar penyakit kulit (JPEG/PNG)
+│   ├── app/                                  # Komponen inti aplikasi web
+│   │   ├── _pycache_/                        # Cache Python otomatis
+│   │   ├── static/                           # File statis frontend
+│   │   │   ├── css/
+│   │   │   │   └── style.css                 # Styling HTML
+│   │   │   └── js/
+│   │   │       └── script.js                 # Interaktivitas frontend
+│   │   ├── templates/                        # Template HTML
+│   │   │   ├── index.html                    # Halaman utama (input gambar)
+│   │   │   ├── result.html                   # Hasil klasifikasi & rekomendasi
+│   │   │   └── error.html                    # Halaman error
+│   │   ├── uploads/                          # Gambar yang diunggah user
+│   │   ├── main.py                           # Logika utama Flask (routing, prediksi, rekomendasi)
+│   │   └── skincare_multilabel.csv           # Dataset structured (label & produk skincare)
+│   ├── requirements.txt                      # Daftar dependencies Python
+│   └── README.nd                             # Dokumentasi internal (ganti ke README.md)
+├── uploads/                                  # Upload global (opsional)
+└── README.md                                 # Dokumentasi utama proyek
 
 ---
 
