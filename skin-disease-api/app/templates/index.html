@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Detection - Kelompok 3</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Skin Detection</h1>
+        </div>
+
+        <div class="upload-section card">
+            <p class="guidance">Mohon unggah foto kulit yang close-up dan jelas untuk deteksi yang akurat.</p>
+            <div class="file-input-wrapper">
+                <input type="file" id="imageUpload" accept="image/*">
+                <label for="imageUpload" class="custom-file-upload">Pilih File</label>
+                <span id="fileName">Tidak ada file terpilih</span>
+            </div>
+            <button id="uploadPredictBtn" class="primary-btn">Upload & Prediksi</button>
+        </div>
+
+        <div class="prediction-section card">
+            <h2>Hasil Prediksi:</h2>
+            <p id="predictionResult" class="result-text">Belum ada prediksi.</p>
+            <div id="productRecommendation"></div> <!-- Tambahkan ini untuk produk -->
+        </div>
+
+        <div class="recommendation-section card">
+            <h2>Rekomendasi Perawatan:</h2>
+            <button id="getSkincareRecommendationBtn" class="secondary-btn">Cari Rekomendasi Perawatan</button>
+            <div id="skincareRecommendation"></div>
+        </div>
+
+        <div class="footer card">
+            <div class="group-info">
+                <h3>Dibuat Oleh:</h3>
+                <p>Kelompok 3</p>
+            </div>
+            <div class="members-info">
+                <h4>Anggota:</h4>
+                <ul>
+                    <li>Hening Mestika Langit (5049221004)</li>
+                    <li>Anabela Aulia Sain (5049221008)</li>
+                    <li>Haura Armelya (50492210010)</li>
+                    <li>Abiyyu Haryo Panunggul (5049221017)</li>
+                    <li>Muhammad Sulaiman (5049221022)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

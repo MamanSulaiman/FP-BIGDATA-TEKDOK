@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result - Skin Disease Classifier</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container result-container">
+        <h1>Analysis Result</h1>
+        
+        <div class="result-card">
+            <div class="image-preview">
+                <img src="{{ result.image_url }}" alt="Uploaded skin image">
+            </div>
+            
+            <div class="diagnosis">
+                <h2>Diagnosis</h2>
+                <p class="disease-name">{{ result.disease }}</p>
+                <p class="confidence">Confidence: {{ result.confidence }}%</p>
+            </div>
+            
+            <div class="recommendations">
+                <h2>Recommendations</h2>
+                <p>{{ result.recommendations }}</p>
+            </div>
+            
+            <a href="/" class="back-btn">Analyze Another Image</a>
+        </div>
+    </div>
+</body>
+</html>

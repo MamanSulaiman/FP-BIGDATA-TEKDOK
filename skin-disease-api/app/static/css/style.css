@@ -1,0 +1,262 @@
+:root {
+    --primary-color: #3498db; /* Biru */
+    --secondary-color: #2ecc71; /* Hijau */
+    --accent-color: #f39c12; /* Oranye untuk tombol secondary hover atau highlight */
+    --background-light: #f4f7f6;
+    --card-background: #ffffff;
+    --text-dark: #333;
+    --text-light: #555;
+    --border-light: #e0e0e0;
+    --success-light: #e6ffe6; /* Light green for recommendations */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    background-color: var(--card-background);
+    padding: 35px 45px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+    margin: 30px 0; /* Memberi sedikit margin atas/bawah */
+}
+
+.header {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    color: var(--text-dark);
+    margin-top: 30px;
+    margin-bottom: 18px;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+h3, h4 {
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card {
+    background-color: var(--card-background);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    border: 1px solid var(--border-light);
+}
+
+.upload-section .guidance {
+    color: var(--text-light);
+    font-size: 1em;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.file-input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: none; /* Sembunyikan input file asli */
+}
+
+.custom-file-upload {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-file-upload:hover {
+    background-color: #27ae60; /* Darker green */
+    transform: translateY(-2px);
+}
+
+#fileName {
+    color: var(--text-light);
+    font-size: 0.9em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px; /* Batasi lebar teks nama file */
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.05em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.primary-btn:hover {
+    background-color: #2980b9; /* Darker blue */
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-btn:hover {
+    background-color: #27ae60; /* Darker green */
+    transform: translateY(-2px);
+}
+
+.result-text {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 15px;
+    min-height: 1.5em; /* Untuk mencegah pergeseran layout saat hasil muncul */
+}
+
+#skincareRecommendation {
+    margin-top: 20px;
+    text-align: left;
+    background-color: var(--success-light); /* Light green background for recommendations */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #c8e6c9; /* Slightly darker border for success light */
+    color: var(--text-dark);
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+#skincareRecommendation p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+    font-size: 1em;
+}
+
+#skincareRecommendation ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    padding-left: 0;
+}
+
+#skincareRecommendation li {
+    margin-bottom: 6px;
+    font-size: 0.95em;
+}
+
+.footer {
+    margin-top: 35px;
+    padding: 25px;
+    border-top: 1px solid var(--border-light);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.group-info, .members-info {
+    text-align: left;
+    flex: 1;
+    min-width: 250px; /* Agar tidak terlalu sempit di layar kecil */
+}
+
+.group-info p {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin: 5px 0 0;
+}
+
+.members-info ul {
+    list-style-type: none; /* Hilangkan bullet default */
+    padding: 0;
+    margin: 5px 0 0;
+}
+
+.members-info li {
+    margin-bottom: 4px;
+    font-size: 0.95em;
+    color: var(--text-light);
+}
+
+/* Responsif dasar */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 20px;
+        margin: 20px 10px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .file-input-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #fileName {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .group-info, .members-info {
+        text-align: center;
+    }
+}
